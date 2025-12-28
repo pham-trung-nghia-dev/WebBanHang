@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http;
+
+use Illuminate\Foundation\Http\Kernel as HttpKernel;
+
+class Kernel extends HttpKernel
+{
+    /**
+     * Middleware toàn cục (áp dụng mọi request).
+     */
+    protected $middleware = [
+        \Illuminate\Foundation\Http\Middleware\HandlePrecognitiveRequests::class,
+        \Illuminate\Http\Middleware\TrustProxies::class,
+        \Illuminate\Http\Middleware\HandleCors::class,
+        \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
+        \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+    ];
+
+    /**
+     * Middleware group áp dụng cho routes web.
+     */
+    protected $middlewareGroups = [
+        'web' => [
+            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            \Illuminate\Session\Middleware\StartSession::class,
+            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ],
+
+        'api' => [
+            \Illuminate\Routing\Middleware\ThrottleRequests::class,
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ],
+    ];
+
+    /**
+     * Middleware riêng theo tên (dùng trong routes).
+     */
+
+}
