@@ -6,7 +6,7 @@
 
 ## 📖 Giới Thiệu
 
-Hệ thống thương mại điện tử hoàn chỉnh được xây dựng bằng **Laravel 12.x**, sẵn sàng triển khai production. Dự án thể hiện kỹ năng full-stack development với các công nghệ hiện đại như Redis caching, Queue jobs, và payment gateway integration.
+Hệ thống thương mại điện tử hoàn chỉnh được xây dựng bằng Laravel. Dự án thể hiện kỹ năng full-stack development với các công nghệ hiện đại như Redis caching, Queue jobs, và payment gateway integration.
 
 ---
 
@@ -144,8 +144,6 @@ php artisan queue:work  # Terminal riêng
 php artisan serve
 ```
 
-**Truy cập:** `http://localhost:8000` | **Admin:** `http://localhost:8000/admin`
-
 ---
 
 ## 📊 Thống Kê
@@ -184,34 +182,9 @@ php artisan serve
 
 ## 👨‍💻 Tác Giả
 
-**Tên của bạn**
+**Phạm Trung Nghĩa**
 
 Laravel Developer đam mê xây dựng ứng dụng web hiện đại.
 
-**Liên hệ:**
-- 📧 Email: your-email@example.com
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
-- 🐙 GitHub: [@your-username](https://github.com/your-username)
-
----
-
-## 💼 Tuyển Dụng
-
-Đang tìm kiếm cơ hội việc làm:
-- **Backend Developer** (Laravel, PHP)
-- **Full-stack Developer** (Laravel + Vue.js/React)
-- **E-commerce Developer**
-
 **Liên hệ để trao đổi:**
-- 📧 Email: your-email@example.com
-- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-
----
-
-## 📄 License
-
-MIT License - Tự do sử dụng cho mục đích cá nhân và thương mại.
-
----
-
-⭐ **Nếu dự án hữu ích, đừng quên star trên GitHub!**
+- 📧 Email: phamtrungnghia15082003@gmail.com
