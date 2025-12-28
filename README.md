@@ -1,61 +1,217 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🛒 Web Bán Hàng - Hệ Thống E-Commerce Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
+[![Redis](https://img.shields.io/badge/Redis-Caching-orange.svg)](https://redis.io)
 
-## About Laravel
+## 📖 Giới Thiệu
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Hệ thống thương mại điện tử hoàn chỉnh được xây dựng bằng **Laravel 12.x**, sẵn sàng triển khai production. Dự án thể hiện kỹ năng full-stack development với các công nghệ hiện đại như Redis caching, Queue jobs, và payment gateway integration.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Tính Năng Đầy Đủ
 
-## Learning Laravel
+### 🎯 Frontend (Khách Hàng)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Trang Chủ & Sản Phẩm:**
+- ✅ Trang chủ với sản phẩm mới nhất (Redis cache)
+- ✅ Danh mục sản phẩm đa cấp (parent-child)
+- ✅ Quản lý thương hiệu
+- ✅ Tìm kiếm sản phẩm với Redis caching (TTL 180s)
+- ✅ Chi tiết sản phẩm (hình ảnh, mô tả, giá)
+- ✅ Lọc sản phẩm theo danh mục/thương hiệu
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+**Giỏ Hàng & Thanh Toán:**
+- ✅ Giỏ hàng với cập nhật số lượng real-time
+- ✅ Đăng ký/Đăng nhập/Đăng xuất khách hàng
+- ✅ Thanh toán đa dạng: COD, MoMo, ATM
+- ✅ Lịch sử đặt hàng
+- ✅ Giao diện responsive (mobile/tablet/desktop)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 🔧 Backend (Admin)
 
-## Laravel Sponsors
+**Quản Lý:**
+- ✅ Dashboard tổng quan
+- ✅ CRUD sản phẩm (thêm/sửa/xóa, upload ảnh, kích hoạt/vô hiệu hóa)
+- ✅ CRUD danh mục (phân cấp cha-con)
+- ✅ CRUD thương hiệu
+- ✅ Quản lý đơn hàng (xem danh sách, chi tiết, xóa)
+- ✅ Email log system
+- ✅ Authentication & Session management
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🚀 Tính Năng Kỹ Thuật
 
-### Premium Partners
+**Performance:**
+- ✅ Redis caching (sản phẩm, tìm kiếm, session)
+- ✅ Query optimization
+- ✅ Lazy loading
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+**Email System:**
+- ✅ Queue jobs (async email processing)
+- ✅ Gmail SMTP integration
+- ✅ Email templates (Blade)
+- ✅ Email logging
 
-## Contributing
+**Security:**
+- ✅ CSRF protection
+- ✅ SQL injection prevention (Query Builder)
+- ✅ XSS protection (Blade escaping)
+- ✅ Session management (Redis)
+- ✅ Input validation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**Database:**
+- ✅ Migrations (version control)
+- ✅ Seeders (sample data)
+- ✅ 9 bảng chính (normalized design)
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Công Nghệ Sử Dụng
 
-## Security Vulnerabilities
+**Backend:**
+- Laravel 12.x, PHP 8.2+, MySQL, Redis, Composer
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+**Frontend:**
+- Blade Templates, Bootstrap, jQuery, Vite, Tailwind CSS 4.0
 
-## License
+**Tools:**
+- Laravel Tinker, Pint, Pail, PHPUnit, FakerPHP
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Integrations:**
+- Gmail SMTP, MoMo Payment API
+
+---
+
+## 📁 Cấu Trúc Dự Án
+
+```
+WebBanHang/
+├── app/Http/Controllers/     # 7 Controllers (Admin, Product, Cart, Checkout...)
+├── app/Jobs/                  # Queue Jobs (SendOrderEmailJob)
+├── app/Mail/                  # Mail Classes
+├── database/migrations/       # 12+ Migrations
+├── resources/views/           # Blade templates (admin, pages, emails)
+├── routes/web.php            # 40+ Routes
+└── public/upload/            # Product images
+```
+
+---
+
+## 🗄️ Database
+
+**9 Bảng Chính:**
+- `tbl_category_product` - Danh mục (phân cấp)
+- `tbl_brand` - Thương hiệu
+- `tbl_product` - Sản phẩm
+- `tbl_customer` - Khách hàng
+- `tbl_shipping` - Vận chuyển
+- `tbl_payment` - Thanh toán
+- `tbl_order` - Đơn hàng
+- `tbl_order_details` - Chi tiết đơn hàng
+- `tbl_email_log` - Email log
+
+---
+
+## 🚀 Cài Đặt Nhanh
+
+```bash
+# 1. Clone & Install
+git clone https://github.com/your-username/WebBanHang.git
+cd WebBanHang
+composer install
+npm install
+
+# 2. Config
+cp .env.example .env
+php artisan key:generate
+
+# 3. Database
+mysql -u root -p -e "CREATE DATABASE shopbanhang;"
+php artisan migrate
+# hoặc: mysql -u root -p shopbanhang < ShopBanHang.sql
+
+# 4. Redis (đảm bảo Redis đang chạy)
+# Cấu hình trong .env: REDIS_HOST=127.0.0.1, REDIS_PORT=6379
+
+# 5. Mail (Gmail SMTP)
+# Xem GMAIL_SMTP_SETUP.md
+
+# 6. Run
+php artisan storage:link
+npm run dev
+php artisan queue:work  # Terminal riêng
+php artisan serve
+```
+
+**Truy cập:** `http://localhost:8000` | **Admin:** `http://localhost:8000/admin`
+
+---
+
+## 📊 Thống Kê
+
+- **Controllers:** 7
+- **Routes:** 40+
+- **Database Tables:** 9
+- **Migrations:** 12+
+- **Views:** 20+
+- **Lines of Code:** ~5000+
+
+---
+
+## 🌟 Kỹ Năng Thể Hiện
+
+- ✅ **Laravel Framework** (MVC, Routing, Middleware, Eloquent)
+- ✅ **Redis** (Caching, Session, Queue)
+- ✅ **MySQL** (Database Design, Relationships, Queries)
+- ✅ **Queue Jobs** (Async Processing)
+- ✅ **Email Integration** (SMTP, Templates)
+- ✅ **Payment Gateway** (MoMo API)
+- ✅ **Frontend** (Blade, Bootstrap, jQuery, Vite)
+- ✅ **Security Best Practices**
+- ✅ **Code Quality** (PSR standards, Laravel best practices)
+
+---
+
+## 🔮 Có Thể Mở Rộng
+
+- Payment: VNPay, Stripe, Wallet
+- Features: Reviews, Wishlist, Social Login, Order Tracking
+- Admin: Analytics Dashboard, Inventory, Reports, Multi-role
+- Technical: RESTful API, Real-time Notifications, Multi-language, Docker, CI/CD
+
+---
+
+## 👨‍💻 Tác Giả
+
+**Tên của bạn**
+
+Laravel Developer đam mê xây dựng ứng dụng web hiện đại.
+
+**Liên hệ:**
+- 📧 Email: your-email@example.com
+- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+- 🐙 GitHub: [@your-username](https://github.com/your-username)
+
+---
+
+## 💼 Tuyển Dụng
+
+Đang tìm kiếm cơ hội việc làm:
+- **Backend Developer** (Laravel, PHP)
+- **Full-stack Developer** (Laravel + Vue.js/React)
+- **E-commerce Developer**
+
+**Liên hệ để trao đổi:**
+- 📧 Email: your-email@example.com
+- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
+
+---
+
+## 📄 License
+
+MIT License - Tự do sử dụng cho mục đích cá nhân và thương mại.
+
+---
+
+⭐ **Nếu dự án hữu ích, đừng quên star trên GitHub!**
